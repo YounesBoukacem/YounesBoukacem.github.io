@@ -45,56 +45,51 @@
   {
     "objectID": "Knowledge base/Knowledge base.html",
     "href": "Knowledge base/Knowledge base.html",
-    "title": "Knowledge Base",
+    "title": "Knowledge base",
     "section": "",
     "text": "Welcome to my knowledge base! This is a collection of my notes, ideas, and resources on various topics. I hope you find it useful and informative.\nThis is the homepage of the knowledge base, which explains how the knowledge base is organized and how to navigate it.",
     "crumbs": [
-      "Knowledge base",
-      "Knowledge Base"
+      "Knowledge base"
     ]
   },
   {
     "objectID": "Knowledge base/Knowledge base.html#research-areas-within-scientific-fields",
     "href": "Knowledge base/Knowledge base.html#research-areas-within-scientific-fields",
-    "title": "Knowledge Base",
+    "title": "Knowledge base",
     "section": "1.1 Research areas within scientific fields",
     "text": "1.1 Research areas within scientific fields\nScientific fields (SFs) can be further divided into research areas (RAs). For example, the scientific field of Mathematics can be divided into the following research areas:\n\nMathematics &gt; Pure Mathematics\nMathematics &gt; Applied Mathematics\nMathematics &gt; Computational Mathematics",
     "crumbs": [
-      "Knowledge base",
-      "Knowledge Base"
+      "Knowledge base"
     ]
   },
   {
     "objectID": "Knowledge base/Knowledge base.html#the-table-of-contents-of-the-knowledge-base",
     "href": "Knowledge base/Knowledge base.html#the-table-of-contents-of-the-knowledge-base",
-    "title": "Knowledge Base",
+    "title": "Knowledge base",
     "section": "1.2 The table of contents of the knowledge base",
     "text": "1.2 The table of contents of the knowledge base\nThe table of contents of the knowledge base is automatically generated based on the structure of the knowledge base. It is organized by scientific field and research area.\n\n1.2.1 A research area is loosely defined\nIt should be noted that a research area is loosely defined and can be further divided into sub-areas. For example, the research area of Mathematics &gt; Pure Mathematics can be further divided into the following sub-areas:\n\nMathematics &gt; Pure Mathematics &gt; Algebra\nMathematics &gt; Pure Mathematics &gt; Analysis\nMathematics &gt; Pure Mathematics &gt; Geometry\n\n\n\n1.2.2 The research areas can span theoretical and applied research\nFor example, the research area of Mathematics &gt; Applied Mathematics can include both theoretical and applied aspects of mathematics.",
     "crumbs": [
-      "Knowledge base",
-      "Knowledge Base"
+      "Knowledge base"
     ]
   },
   {
     "objectID": "Knowledge base/Knowledge base.html#text-and-equations",
     "href": "Knowledge base/Knowledge base.html#text-and-equations",
-    "title": "Knowledge Base",
+    "title": "Knowledge base",
     "section": "2.1 Text and equations",
     "text": "2.1 Text and equations\nTextual content and mathematical equations are certainly the most frequent type of content.\n\n2.1.1 Textual content\nFor example, you can write a paragraph of text like this:\n`` The riemann hypothesis was initially proposed by Bernhard Riemann in 1859. It is a conjecture about the distribution of the zeros of the Riemann zeta function, which is a complex function that encodes information about the prime numbers. The hypothesis states that all non-trivial zeros of the zeta function have a real part equal to 1/2. This conjecture has profound implications for number theory and has been the subject of extensive research and study. ”\n\n\n2.1.2 Equations\nFor example, you can find equations like this:\n\\[\n\\int_{0}^{\\infty} \\frac{x^{n-1}}{e^x - 1} dx = \\Gamma(n) \\zeta(n)\n\\]",
     "crumbs": [
-      "Knowledge base",
-      "Knowledge Base"
+      "Knowledge base"
     ]
   },
   {
     "objectID": "Knowledge base/Knowledge base.html#images-and-videos",
     "href": "Knowledge base/Knowledge base.html#images-and-videos",
-    "title": "Knowledge Base",
+    "title": "Knowledge base",
     "section": "2.2 Images and videos",
     "text": "2.2 Images and videos\nMore complex content can be found in the knowledge base articles, such as images and videos.\n\n2.2.1 Images\nFor example, you can find images like this:\n\n\n\nExample Image\n\n\n\n\n2.2.2 Videos\nYou may also find videos like these:",
     "crumbs": [
-      "Knowledge base",
-      "Knowledge Base"
+      "Knowledge base"
     ]
   },
   {
