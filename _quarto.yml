@@ -15,7 +15,7 @@ website:
         href: news.qmd
       - text: Blog
         href: blog.qmd
-      - text: Knowledge Base
+      - text: Knowledge base
         href: Knowledge base/Knowledge base.qmd
 
   sidebar:

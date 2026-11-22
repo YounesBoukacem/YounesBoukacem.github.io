@@ -18,7 +18,7 @@ The website is organized into 5 main sections:
 
 - [Blog](blog.qmd): This section contains my blog posts, where I share my thoughts and ideas on various topics.
 
-- [Knowledge Base](Knowledge%20base/Knowledge%20base.qmd): This section contains my knowledge base, which is a collection of my notes, ideas, and resources on various topics. It is organized by scientific field and research area.
+- [Knowledge base](Knowledge%20base/Knowledge%20base.qmd): This section contains my knowledge base, which is a collection of my notes, ideas, and resources on various topics. It is organized by scientific field and research area.
 
 ---
 
