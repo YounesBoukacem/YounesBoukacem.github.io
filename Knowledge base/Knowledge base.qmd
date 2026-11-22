@@ -1,0 +1,83 @@
+---
+title: Knowledge Base
+number-sections: true
+---
+
+Welcome to my knowledge base! This is a collection of my notes, ideas, and resources on various topics. I hope you find it useful and informative.
+
+This is the homepage of the knowledge base, which explains how the knowledge base is organized and how to navigate it.
+
+# How is this knowledge base organized?
+
+As of now, the top most unit of organization of the knowledge base is the scientific field.
+
+Examples of scientific fields are:
+
+- Mathematics
+- Computer Science
+- Physics
+
+## Research areas within scientific fields
+
+Scientific fields (SFs) can be further divided into research areas (RAs). For example, the scientific field of Mathematics can be divided into the following research areas:
+
+- `Mathematics > Pure Mathematics`
+- `Mathematics > Applied Mathematics`
+- `Mathematics > Computational Mathematics`
+
+
+## The table of contents of the knowledge base
+
+The table of contents of the knowledge base is automatically generated based on the structure of the knowledge base. It is organized by scientific field and research area.
+
+### A research area is loosely defined
+
+It should be noted that a research area is loosely defined and can be further divided into sub-areas. For example, the research area of `Mathematics > Pure Mathematics` can be further divided into the following sub-areas:
+
+- `Mathematics > Pure Mathematics > Algebra`
+- `Mathematics > Pure Mathematics > Analysis`
+- `Mathematics > Pure Mathematics > Geometry`
+
+### The research areas can span theoretical and applied research
+
+For example, the research area of `Mathematics > Applied Mathematics` can include both theoretical and applied aspects of mathematics.
+
+
+# The content of the knowledge base articles
+
+You can find all sorts of content in the knowledge base articles.
+
+## Text and equations
+
+Textual content and mathematical equations are certainly the most frequent type of content.
+
+### Textual content
+
+For example, you can write a paragraph of text like this:
+
+``
+The riemann hypothesis was initially proposed by Bernhard Riemann in 1859. It is a conjecture about the distribution of the zeros of the Riemann zeta function, which is a complex function that encodes information about the prime numbers. The hypothesis states that all non-trivial zeros of the zeta function have a real part equal to 1/2. This conjecture has profound implications for number theory and has been the subject of extensive research and study.
+"
+
+### Equations
+
+For example, you can find equations like this:
+
+$$
+\int_{0}^{\infty} \frac{x^{n-1}}{e^x - 1} dx = \Gamma(n) \zeta(n)
+$$
+
+## Images and videos
+
+More complex content can be found in the knowledge base articles, such as images and videos.
+
+### Images
+
+For example, you can find images like this:
+
+![Example Image](image.jpeg)
+
+### Videos
+
+You may also find videos like these:
+{{< video https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab >}}

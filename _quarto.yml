@@ -1,0 +1,32 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: Younes Boukacem
+  navbar:
+    search: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: CV
+        href: cv.qmd
+      - text: News
+        href: news.qmd
+      - text: Blog
+        href: blog.qmd
+      - text: Knowledge Base
+        href: Knowledge base/Knowledge base.qmd
+
+  sidebar:
+    - title: Knowledge base
+      style: floating
+      contents:
+        - auto: Knowledge base/**
+
+format:
+  html:
+    theme:
+      - litera
+    css: styles.css
+    toc: true
