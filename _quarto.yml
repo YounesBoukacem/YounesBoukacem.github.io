@@ -4,6 +4,7 @@ project:
 
 website:
   title: Younes Boukacem
+  favicon: favicon.png
   navbar:
     search: true
     left:
