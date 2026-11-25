@@ -4,8 +4,11 @@ project:
 
 website:
   title: Younes Boukacem
-  favicon: favicon.png
+  favicon: artifacts/favicon.png
   navbar:
+    background: dark
+    logo: artifacts/favicon.png
+    pinned: true
     search: true
     left:
       - text: Home
@@ -28,7 +31,7 @@ website:
 format:
   html:
     theme:
-      dark: cyborg
-      light: litera
+      light: [united, artifacts/light.scss]
+      dark: [darkly, artifacts/dark.scss]
     css: styles.css
     toc: true

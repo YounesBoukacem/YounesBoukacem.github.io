@@ -1,0 +1,57 @@
+---
+title: "0 - Basic data versionning workflow with DVC"
+description: "This post describes a basic workflow for data versioning using DVC."
+date: "2026-11-24"
+categories: ["software", "data science"]
+image: "front_image.png"
+---
+
+---
+
+# Introduction
+
+I wondered if there was some software that would allow to manage data files with the same ease (ease...) that Git provides for managing code files.
+
+My quest quickly led me to find DVC, which stands for "Data Version Control". The project website can be found at <https://dvc.org/>, and the GitHub repository is at <https://github.com/iterative/dvc>.
+
+I gave it a go through a mini project, thus learning the basic workflow of DVC. In this post, I will try to explain what I actually did. I hope this can serve as a quick kickstart reference for anyone who wants to get learn DVC.
+
+# Goals of the mini-project
+
+I am planning on reading and **editing** a few pdf books in the upcoming months. A natural idea to save my progress would be a versioning system, but since pdfs are binary files, I cannot use barebone Git for this, and this is where DVC makes its entrance.
+
+# Methodology
+
+DVC is a command line tool just like git, and it is meant to be used alongside git according to a "workflow". The workflow is as follows:
+
+1. As usual, we first create our working directory, which I'll call `education`, and we git initialize it:
+
+    ```bash
+    mkdir ~/education
+    cd ~/education
+    git init .
+    ```
+
+2. Then, we initialize DVC in our wokring directory, which looks just like we do in git:
+
+    ```bash
+    dvc init
+    ```
+
+3. Now, here is the idea behind managing data files with DVC:
+    
+    * say we have a data file `./book.pdf` that we want to manage with DVC. Instead of adding `./book.pdf` to git via our usual `git add ./book.pdf` command (like we would do with text files), we add it to DVC via a very look-alikey command: `dvc add ./book.pdf`.
+
+    * This will create a new text file `./book.pdf.dvc` (right next to where `./book.pdf` is located) which will act as a "pointer" to the actual data file `./book.pdf`.
+    
+    * I say "pointer" because the `./book.pdf.dvc` file will contain a hash of the actual data file `./book.pdf`, thus "linking" or "pointing" to the latter uniquely.
+    
+    * Then, since the `./book.pdf.dvc` file is just a regular text file, we can add it to git via `git add ./book.pdf.dvc`, thus creating a commit that holds a light textual pointer that links to the heavy data file: `./book.pdf.dvc *> ./book.pdf`.
+
+    * At the same time, the moment we do `dvc add ./book.pdf`, in addition to creating the pointer file 
+    
+    
+The actual data file will be moved to a hidden directory `.dvc/cache` in the working directory, and the pointer file `./book.pdf.dvc` will be added to git instead of the actual data file.
+    ```bash
+    dvc add book.pdf
+    ```

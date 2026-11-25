@@ -22,6 +22,6 @@ The website is organized into 5 main sections:
 
 ---
 
-![Albert Einstein](einstein.jpeg)
+![Albert Einstein](artifacts/einstein.jpeg)
 
 ---

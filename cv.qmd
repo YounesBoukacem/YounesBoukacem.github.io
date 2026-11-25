@@ -2,4 +2,4 @@
 title: Curriculum Vitae
 ---
 
-<iframe src="CV_Younes_BOUKACEM.pdf" width="100%" height="100%"></iframe>
+<iframe src="artifacts/CV_Younes_BOUKACEM.pdf" width="100%" height="100%"></iframe>

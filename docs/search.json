@@ -1,46 +1,60 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Younes Boukacem",
+    "objectID": "posts/0 - Basic data versionning workflow with DVC/index.html",
+    "href": "posts/0 - Basic data versionning workflow with DVC/index.html",
+    "title": "0 - Basic data versionning workflow with DVC",
     "section": "",
-    "text": "Welcome to my personal website! This is a collection of my work, research, and interests. I hope you find it useful and informative.\n\n\n\n\n\n\nImportant\n\n\n\nThe website is still under construction, thus the current content is more of a draft than a finished product.\n\n\nThe website is organized into 5 main sections:\n\nHome: This is the homepage of the website, which provides an overview of my work and interests.\nCV: This section contains my curriculum vitae, which provides an overview of my education, work experience, and skills.\nNews: This section contains news and updates about my work and research.\nBlog: This section contains my blog posts, where I share my thoughts and ideas on various topics.\nKnowledge base: This section contains my knowledge base, which is a collection of my notes, ideas, and resources on various topics. It is organized by scientific field and research area.\n\n\n\n\n\nAlbert Einstein"
+    "text": "Introduction\nI wondered if there was some software that would allow to manage data files with the same ease (ease…) that Git provides for managing code files.\nMy quest quickly led me to find DVC, which stands for “Data Version Control”. The project website can be found at https://dvc.org/, and the GitHub repository is at https://github.com/iterative/dvc.\nI gave it a go through a mini project, thus learning the basic workflow of DVC. In this post, I will try to explain what I actually did. I hope this can serve as a quick kickstart reference for anyone who wants to get learn DVC.\n\n\nGoals of the mini-project\nI am planning on reading and editing a few pdf books in the upcoming months. A natural idea to save my progress would be a versioning system, but since pdfs are binary files, I cannot use barebone Git for this, and this is where DVC makes its entrance.\n\n\nMethodology\nDVC is a command line tool just like git, and it is meant to be used alongside git according to a “workflow”. The workflow is as follows:\n\nAs usual, we first create our working directory, which I’ll call education, and we git initialize it:\nmkdir ~/education\ncd ~/education\ngit init .\nThen, we initialize DVC in our wokring directory, which looks just like we do in git:\ndvc init\nNow, here is the idea behind managing data files with DVC:\n\nsay we have a data file ./book.pdf that we want to manage with DVC. Instead of adding ./book.pdf to git via our usual git add ./book.pdf command (like we would do with text files), we add it to DVC via a very look-alikey command: dvc add ./book.pdf.\nThis will create a new text file ./book.pdf.dvc (right next to where ./book.pdf is located) which will act as a “pointer” to the actual data file ./book.pdf.\nI say “pointer” because the ./book.pdf.dvc file will contain a hash of the actual data file ./book.pdf, thus “linking” or “pointing” to the latter uniquely.\nThen, since the ./book.pdf.dvc file is just a regular text file, we can add it to git via git add ./book.pdf.dvc, thus creating a commit that holds a light textual pointer that links to the heavy data file: ./book.pdf.dvc *&gt; ./book.pdf.\nAt the same time, the moment we do dvc add ./book.pdf, in addition to creating the pointer file\n\n\nThe actual data file will be moved to a hidden directory .dvc/cache in the working directory, and the pointer file ./book.pdf.dvc will be added to git instead of the actual data file. bash     dvc add book.pdf"
   },
   {
-    "objectID": "Knowledge base/Mathematics/1 - What are mathematics.html",
-    "href": "Knowledge base/Mathematics/1 - What are mathematics.html",
-    "title": "Younes Boukacem",
-    "section": "",
-    "text": "what is computer science",
-    "crumbs": [
-      "Knowledge base",
-      "Mathematics",
-      "1 - What are mathematics"
-    ]
-  },
-  {
-    "objectID": "Knowledge base/Physics/0 - Welcome.html",
-    "href": "Knowledge base/Physics/0 - Welcome.html",
+    "objectID": "Knowledge base/Mathematics/0 - Welcome.html",
+    "href": "Knowledge base/Mathematics/0 - Welcome.html",
     "title": "Younes Boukacem",
     "section": "",
     "text": "welcome on board",
     "crumbs": [
       "Knowledge base",
-      "Physics",
+      "Mathematics",
       "0 - Welcome"
     ]
   },
   {
-    "objectID": "Knowledge base/Computer science/1 - What is computer science.html",
-    "href": "Knowledge base/Computer science/1 - What is computer science.html",
+    "objectID": "Knowledge base/Physics/1 - What is physics.html",
+    "href": "Knowledge base/Physics/1 - What is physics.html",
     "title": "Younes Boukacem",
     "section": "",
     "text": "what is computer science",
     "crumbs": [
       "Knowledge base",
-      "Computer science",
-      "1 - What is computer science"
+      "Physics",
+      "1 - What is physics"
     ]
+  },
+  {
+    "objectID": "Knowledge base/Computer science/0 - Welcome.html",
+    "href": "Knowledge base/Computer science/0 - Welcome.html",
+    "title": "Younes Boukacem",
+    "section": "",
+    "text": "welcome on board",
+    "crumbs": [
+      "Knowledge base",
+      "Computer science",
+      "0 - Welcome"
+    ]
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "This is the news page."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog posts",
+    "section": "",
+    "text": "0 - Basic data versionning workflow with DVC\n\n\n\nsoftware\n\ndata science\n\n\n\n\nThis post describes a basic workflow for data versioning using DVC.\n\n\n\n\n\n\nNov 24, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Knowledge base/Knowledge base.html",
@@ -93,53 +107,46 @@
     ]
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog posts",
-    "section": "",
-    "text": "This is the blog page."
-  },
-  {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
-    "section": "",
-    "text": "This is the news page."
-  },
-  {
-    "objectID": "Knowledge base/Computer science/0 - Welcome.html",
-    "href": "Knowledge base/Computer science/0 - Welcome.html",
-    "title": "Younes Boukacem",
-    "section": "",
-    "text": "welcome on board",
-    "crumbs": [
-      "Knowledge base",
-      "Computer science",
-      "0 - Welcome"
-    ]
-  },
-  {
-    "objectID": "Knowledge base/Physics/1 - What is physics.html",
-    "href": "Knowledge base/Physics/1 - What is physics.html",
+    "objectID": "Knowledge base/Computer science/1 - What is computer science.html",
+    "href": "Knowledge base/Computer science/1 - What is computer science.html",
     "title": "Younes Boukacem",
     "section": "",
     "text": "what is computer science",
     "crumbs": [
       "Knowledge base",
-      "Physics",
-      "1 - What is physics"
+      "Computer science",
+      "1 - What is computer science"
     ]
   },
   {
-    "objectID": "Knowledge base/Mathematics/0 - Welcome.html",
-    "href": "Knowledge base/Mathematics/0 - Welcome.html",
+    "objectID": "Knowledge base/Physics/0 - Welcome.html",
+    "href": "Knowledge base/Physics/0 - Welcome.html",
     "title": "Younes Boukacem",
     "section": "",
     "text": "welcome on board",
     "crumbs": [
       "Knowledge base",
-      "Mathematics",
+      "Physics",
       "0 - Welcome"
     ]
+  },
+  {
+    "objectID": "Knowledge base/Mathematics/1 - What are mathematics.html",
+    "href": "Knowledge base/Mathematics/1 - What are mathematics.html",
+    "title": "Younes Boukacem",
+    "section": "",
+    "text": "what is computer science",
+    "crumbs": [
+      "Knowledge base",
+      "Mathematics",
+      "1 - What are mathematics"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Younes Boukacem",
+    "section": "",
+    "text": "Welcome to my personal website! This is a collection of my work, research, and interests. I hope you find it useful and informative.\n\n\n\n\n\n\nImportant\n\n\n\nThe website is still under construction, thus the current content is more of a draft than a finished product.\n\n\nThe website is organized into 5 main sections:\n\nHome: This is the homepage of the website, which provides an overview of my work and interests.\nCV: This section contains my curriculum vitae, which provides an overview of my education, work experience, and skills.\nNews: This section contains news and updates about my work and research.\nBlog: This section contains my blog posts, where I share my thoughts and ideas on various topics.\nKnowledge base: This section contains my knowledge base, which is a collection of my notes, ideas, and resources on various topics. It is organized by scientific field and research area.\n\n\n\n\n\nAlbert Einstein"
   }
 ]
